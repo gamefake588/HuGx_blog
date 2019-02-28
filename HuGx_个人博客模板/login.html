@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/Icon.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆 - Hugx</title>
+    <link rel="icon" href="images/tlie1.ico" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/currency.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <!-- 导航 -->
+    <div class="return">
+        <a href="javascript:history.back(-1)">
+            <i class="material-icons">clear</i>
+        </a>
+    </div>
+
+<!-- 登陆 -->
+<div class="login_main">
+    <div class="login_body" id="login_body">
+            <div class="row">
+               <form action="">
+                <div class="input-field col s12 margin-top">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="user_login" type="text" class="validate">
+                    <label for="user_login" id="user_label">用户名</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="pass_login" type="password" class="validate">
+                    <label for="pass_login" >密码</label>
+                </div>
+                <div class="input-field col s8">
+                    <i class="material-icons prefix">voicemail</i>
+                    <input type="text" class="validate" id="code_a" ondblclick="Verification_Code1()">
+                    <label for="code_a">验证码</label>
+                </div>
+                <div class="input-field col s4">
+                    <div id="Verification_Code" onclick="Verification_Code1()">点击刷新</div>
+                </div>
+                <div class="input-field col s12">
+                    <button class="btn waves-effect waves-light col s12" type="submit" name="login" id="login" onclick="return mylogin()">
+                        登陆
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+                <div class="input-field col s12">
+                    <button class="btn waves-effect waves-light col s12 blue" type="submit" name="register" id="switch_register">
+                        注册
+                        <i class="material-icons right">cloud</i>
+                    </button>
+                </div>
+
+            </div>
+    </div>
+<!-- 注册 -->
+    <div class="login_body_register" id="body_register">
+            <div class="row">
+               <form action="">
+                <div class="input-field col s12 margin-top">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="user_register" type="text" class="validate tooltipped" name="user" onblur="userRegister()" data-position="right" data-delay="50" data-tooltip="用户名最少4位汉字">
+                    <label for="user_register">用户名</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="pass_register" type="password" class="validate tooltipped" name="pass" onblur="passRegister()" data-position="right" data-delay="50" data-tooltip="密码最少6位数字">
+                    <label for="pass_register">密码</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="alsopass" type="password" class="validate tooltipped" name="alsopass" data-position="right" data-delay="50" data-tooltip="两次密码需要一致">
+                    <label for="alsopass">再次输入密码</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="phone_register" type="text" class="validate tooltipped" name="phone" onblur="phoneRegister()" data-position="right" data-delay="50" data-tooltip="手机号码">
+                    <label for="phone_register">手机号</label>
+                </div>
+                <div class="input-field col s12">
+                    <button class="btn waves-effect waves-light col s12" type="submit" name="register" onclick="return myregister()">
+                        注册
+                        <i class="material-icons right">cloud</i>
+                    </button>
+                </div>
+            </form>
+                <div class="input-field col s12">
+                    <button class="btn waves-effect waves-light col s12 blue" type="submit" name="login" id="switch_login">
+                        已有账号了？请登录
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+            </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/login_register.js"></script>
+    <script type="text/javascript">
+
+         $(".button-collapse").sideNav();
+         $('.carousel.carousel-slider').carousel({full_width: true});
+        $(document).ready(function(){
+            $('.modal').modal();
+            $('.tooltipped').tooltip({delay: 50});
+        });
+    </script>
+</body>
+</html>

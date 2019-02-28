@@ -1,0 +1,52 @@
+
+.aryicle_left_title{
+    text-align: center;
+}
+/* .aryicle_left_title img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+} */
+.message{
+    font-size: 2rem;
+}
+.message_o{
+    text-align: left;
+    color: #666;
+    letter-spacing: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.user_img,.user_name{
+    float: left;
+}
+.user_img img{
+    border-radius: 50%;
+    height: 50px;
+}
+.user_name{
+    padding: 8px;
+}
+.user_name_n{
+    font-family: '黑体';
+    font-weight: 500;
+}
+.user_name_data{
+    font-size: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(181, 187, 187);
+}
+
+.display_content a{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+
+
+@media(max-width:480px){
+    .aryicle_content_block{
+        padding: 20px 1rem 10px 1.5rem !important;
+    }
+}
