@@ -1,0 +1,96 @@
+.about {
+	width: 100%;
+	height: 900px;
+}
+
+section {
+    height: 100vh;
+}
+
+.abouttop {
+    width: 100%;
+    height: 300px;  
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+.about-to {
+	width: 100%;
+}
+.abouttop h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+.abouttop font {
+	color: #ddd;
+	font-size: 15px;
+}
+.weare {
+	width: 90%;
+	height: auto;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+.weareone {
+	width: 45%;
+	height: auto;
+	/*border: 1px solid #ddd;*/
+	float: left;
+}
+.weareone h2 {
+	font-weight: 300;
+	font-size: 33px;
+	padding-bottom: 15px;
+}
+.weareone p {
+	color: #616162;
+	font-size: 14px;
+	padding-left: 10px;
+	font-family: "宋体";
+	line-height: 30px;
+	text-indent: 30px;
+}
+.wearetoo {
+	width: 45%;
+	height: auto;
+	float: right;
+	border: 0.5px solid #ddd;
+    margin-top: 0px;
+    transition: 0.5s;
+}
+.wearetoo:hover {
+	border: 0.5px solid #a8a5b1;
+}
+.wearetoo img {
+	width: 100%;
+    box-sizing: border-box;
+	padding: 25px;
+}
+@media(max-width:420px) {
+    .abouttop {
+    	height: 200px;
+   		padding-top: 70px;
+    }
+    .abouttop h1 {
+	    font-size: 27px;
+	}
+	.abouttop font {
+		font-size: 13px;
+	}
+	.weare {
+		margin-top: 50px;
+	}
+	.weareone {
+		width: 100%;
+	}
+	.wearetoo {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
